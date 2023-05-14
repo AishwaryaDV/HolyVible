@@ -7,14 +7,13 @@ body{
 }
 .main-section{
     padding: 0;
-    margin: 0 !important;
-    /* background-color: #FFEFD5; */
     background-color:white;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     font-family: "Montserrat Medium";
+    margin-top:-30px;
   }
   
   .logo{
