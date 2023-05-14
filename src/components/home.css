@@ -1,0 +1,300 @@
+body{
+    min-height:2000px;
+    background-color: #FFEFD5;
+    font-family: "Montserrat Medium";
+}
+.main-section{
+    padding: 0;
+    margin: 0 !important;
+    background-color: #FFEFD5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Montserrat Medium";
+  }
+  
+  .logo{
+    position:fixed;
+    top:0;
+    left:0;
+    text-transform:uppercase;
+    letter-spacing:0.8px;
+    font-size:25px;
+    cursor: pointer;
+    width:100%;
+    color:black;
+    background-color: #FFEFD5;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    font-weight:bold;
+  }
+
+  .upper-main-section{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .verses-section-1{
+    flex:1;
+    /* background-color: rgba(243, 215, 170, 0.5); */
+    height:500px;
+    /* margin-left:20px; */
+    /* border-radius:15px 15px 15px 15px; */
+    margin-top:30px;
+    /* margin-left:50px;
+    margin-right:50px; */
+    margin-bottom:60px;
+    padding-top:10px;
+    padding-left:20px;
+    padding-bottom:10px;
+    padding-right:20px;
+    color:black;
+    overflow:hidden;
+    /* transition: box-shadow 0.3s ease-in-out;  */
+  }
+   /* .verses-section-1:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+  } */
+
+  /* verses-animation */
+  h3 {
+    font-family: "Montserrat Medium";
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:21px;
+    letter-spacing: 0.5px;
+    line-height:30px;
+  }
+
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  .new-testament-section{
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    transition: box-shadow 0.3s ease-in-out; 
+    font-weight:bold;
+  }
+
+  /* acknowledgement section */
+  .endorsements-section{
+    background-color:#d2b48c;
+  }
+  .endorsements-title{
+    color:black;
+    display:flex;
+    align-items:left;
+    justify-content:left;
+    margin-bottom:30px;
+    margin-top:-60px;
+    font-size:25px;
+    font-weight:bold;
+    font-family: "Montserrat Medium";
+    margin-left:50px;
+    padding-top:10px;
+    text-transform:uppercase;
+  }
+  .sliding-window {
+    display: flex;
+    flex-direction:column;
+    overflow: hidden; 
+    height: 120px; 
+    border: 1px solid #ccc; 
+    font-family: "Montserrat Medium";
+    font-weight:bold;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:-20px;
+    margin-bottom:15px;
+    border-radius:10px 10px 10px 10px;
+    border:none;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: white;
+    font-style:italic;
+    font-size:18px;
+  }
+  .external-links{
+    color:black;
+  }
+  .block-link {
+    display: block;
+    color:black;
+    cursor:pointer;
+  }
+  
+  /* quote-section */
+  .quote-section{
+    color:black;
+    text-transform:uppercase;
+    font-size:39px;
+    text-align:left;
+    margin-left:25px;
+    margin-top:10px;
+  }
+  .italic{
+    font-style:italic;
+  }
+  /* download-section */
+  .download-icons-section{
+   color:black;
+   display:flex;
+   align-items:left;
+   justify-content:left;
+   margin-left:15px;
+  }
+  .google-play{
+   height:180px;
+   width:210px; 
+   cursor: pointer; 
+   margin-top:-20px; 
+  }
+
+  .apple-store{
+    height:89px;
+    width:240px;
+    cursor: pointer;
+    margin-top:25px;
+  }
+  /* links section */
+  .lower-section{
+    display:flex;
+    flex-direction:row;
+    margin-top:70px;
+    margin-left:25px;
+    line-height:33px;
+  }
+  .learn-links{
+    flex:1;
+    color:black;
+    font-size:18px;
+  }
+  .discover-links{
+    flex:1;
+    color:black;
+    font-size:18px;
+  }
+  .block-link:hover{
+    font-weight:bold;
+  }
+  a{
+    /* text-decoration:none; */
+    cursor:pointer;
+  }
+  .download-icons-section{
+    margin-top:40px;
+  }
+  /* contact section */
+  .contact-icons{
+    display:flex;
+    align-items:left;
+    justify-content:left;
+    margin-left:15px;
+    margin-top:-40px;
+    margin-bottom:80px;
+  }
+ .facebook-icon,.instagram-icon, .messenger-icon, .youtube-icon, .twitter-icon, .telegram-icon{
+    height:35px;
+    width:35px;
+    margin-left:10px;
+    cursor:pointer;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  

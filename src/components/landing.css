@@ -1,0 +1,130 @@
+.landing-page-section{
+    padding: 0;
+    margin: 0 !important;
+    background-color:#FFEFD5 !important;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Red Hat Display", sans-serif !important;
+  }
+  body{
+    min-height:700px;
+    background-color:#FFEFD5;
+  }
+  
+  h1 {
+      background: url(https://upload.wikimedia.org/wikipedia/commons/c/cd/Pietro_Perugino_cat48g.jpg);
+      background-size: 40%;
+      background-position: 50% 50%;
+      -webkit-background-clip: text;
+      color: hsla(0, 0%, 0%, 0.08);
+      animation: zoomout 10s ease 500ms forwards;
+      font-size: 15vw !important;
+      -webkit-text-stroke: 1px black;
+  }
+  
+  @keyframes zoomout {
+      from {
+          background-size: 50%;
+      }
+  
+      to {
+          background-size: 20%;
+      }
+  }
+  h2 {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Red Hat Display", sans-serif !important;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  .header-tagline{
+   text-align:center;
+   margin-top:-55px;
+  }
+  h2 span {
+    transition: 0.5s ease-out;
+  }
+  h2:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  h2:hover span:nth-child(1):after {
+    content: "";
+  }
+  h2:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  h2:hover span {
+    color: black;
+    text-shadow: 0 0 10px rgb(36, 21, 21), 0 0 20px rgb(36, 21, 21), 0 0 40px rgb(36, 21, 21);
+  }
+
+  .landing-page-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    border:none;
+    background-color:black;
+    font-size:17px;
+    width:250px;
+    height:47px;
+    border-radius:10px 10px 10px 10px;
+    font-weight:bold;
+    cursor:pointer;
+    letter-spacing: 0.3px;
+  
+  }
+  
+  
+  /* .landing-page-btn {
+    display: inline-block;
+    align-items:center;
+    justify-content: center;
+    padding: .75rem 1.25rem;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family:"Red Hat Display";
+    border: 0px;
+  }
+  
+  .landing-page-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    z-index: -2;
+  }
+  
+  .landing-page-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #09c;
+    transition: all .3s;
+    z-index: -1;
+  }
+  
+  .landing-page-btn:hover {
+    color: #fff;
+  }
+  
+  .landing-page-btn:hover::before {
+    width: 100%;
+  } */

@@ -1,0 +1,10 @@
+.footer-section{
+    font-size:15px;
+    font-weight:bold;
+    display:flex;
+    align-items:left;
+    justify-content:left;
+    margin-left:22px;
+    margin-top:10px;
+    margin-bottom:5px;
+}
