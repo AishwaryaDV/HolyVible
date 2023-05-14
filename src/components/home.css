@@ -1,12 +1,15 @@
 body{
     min-height:2000px;
-    background-color: #FFEFD5;
+    /* background-color: #FFEFD5; */
+    background-color:white;
+
     font-family: "Montserrat Medium";
 }
 .main-section{
     padding: 0;
     margin: 0 !important;
-    background-color: #FFEFD5;
+    /* background-color: #FFEFD5; */
+    background-color:white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,16 +23,38 @@ body{
     left:0;
     text-transform:uppercase;
     letter-spacing:0.8px;
-    font-size:25px;
+    font-size:28px;
     cursor: pointer;
     width:100%;
     color:black;
-    background-color: #FFEFD5;
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:15px;
+    padding-left:55px;
     font-weight:bold;
   }
+  .logo-symbol{
+    position:fixed;
+    top:0;
+    left:0;
+    padding-left:15px;
+    padding-top:6px;
+    height:40px;
+    width:40px;
+  }
+
+  #header{
+    background-color: white;
+    padding: 25px;
+    transition: background-color 0.3s ease;
+  }
+  #header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
 
   .upper-main-section{
     display:flex;
@@ -52,6 +77,7 @@ body{
     padding-right:20px;
     color:black;
     overflow:hidden;
+    font-size:21px;
     /* transition: box-shadow 0.3s ease-in-out;  */
   }
    /* .verses-section-1:hover{

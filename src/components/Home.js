@@ -8,16 +8,39 @@ import Twitter from '../assets/twitter-icon.png'
 import Youtube from '../assets/youtube-icon.png'
 import Messenger from '../assets/messenger-icon.png'
 import Telegram from '../assets/telegram-icon.png'
+import Logo from '../assets/logo.png'
 import { motion } from 'framer-motion';
 import './home.css';
 import Footer from './Footer';
+import { useEffect } from 'react';
 
 const Home = () => {
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const header = document.getElementById('header');
+    const sticky = header.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  };
    
   return (
   <>
+  <header id="header">
+      <div className="logo">Holy Vible
+        <img className="logo-symbol" src={Logo} alt="jesus christ"/>
+      </div>
+      </header>
     <div className="main-section">
-      <div className="logo">Holy Vible</div>
       <div className="upper-main-section">
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -26,18 +49,23 @@ const Home = () => {
           <div className="verses-section-1">
           <div className="new-testament-section">The New Testament</div>
           <h3>
-              <span>Everything you can't change happened for a good reason. If it did not, it is better to think that it did.</span>
-              <span>Have faith things are going to be great. If you do, you'll atleast get closer to where you want to be.</span>
+              <span>Everything you can't change happened for a good reason.</span>
+              <span>If it did not, it is better to think that it did.</span>
+              <br></br>
+              <span>Have faith things are going to be great.</span>
+              <span>If you do, you'll atleast get closer to where you want to be.</span>
               <span>Have faith in having Faith, and nothing can limit it.</span>
+              <br></br>
               <span>Limitless faith leads to limitless hope.</span>
               <span>Limitless hope leads to limitless love.</span>
               <span>Limitless love is the vibe of heaven.</span>
               <span>Don't doubt the vibe, spread it.</span>
+              <br></br>
               <span>God's amazing grace is coming back.</span>
               <span>We lost our hope when we lost our faith but now our faith is returning and with it a new hope will multiply.</span>
               <span>For hope is a necessary ingredient for our hopes to become reality.</span>
               <span>The universe was made for you, and if it wasn't it is better to think that it was.</span>
-              <span>To some extent, perhaps a greater extent than we can yet quite fathom, how we perceive and approach the world creates a world that appears to us in that form - as "real".</span>
+              <span>To some extent, perhaps a greater extent than we can yet quite fathom, how we perceive and approach <br></br>the world creates a world that appears to us in that form - as "real".</span>
               <span>The future is going to be better than you can imagine, it if it's not, it's better to think that it is.</span>
               <span>Not just because it gives you better vibes in the moment, but because it actaully increases the chance that it is better.</span>
           </h3>
