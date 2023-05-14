@@ -1,5 +1,4 @@
 import React from 'react'
-import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 import {useNavigate} from "react-router-dom";
 import './landing.css'
 

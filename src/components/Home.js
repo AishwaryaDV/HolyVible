@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import PrayingHands from '../assets/praying-hands.png'
 import AppleStore from '../assets/appleStore.png'
 import GooglePlay from '../assets/googlePlay.png'
 import Facebook from '../assets/facebook-icon.png'
